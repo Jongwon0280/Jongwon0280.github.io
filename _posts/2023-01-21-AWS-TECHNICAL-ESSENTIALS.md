@@ -1,10 +1,5 @@
 # AWS TECHNICAL ESSENTIALS
-title: AWS TECHNICAL ESSENTIALS
-subtitle: AWS Technical Essentials 교육정리
-categories: Cloud
-tags: AWS
-date: 2023-01-21 01:05:02 +0000
-last_modified_at: 2023-01-21 01:05:02 +0000
+
 ---
 
 # **클라우드 컴퓨팅**
@@ -85,7 +80,7 @@ Access Management는 AWS계정 및 리소스에 대한 보안 액세스를 관�
     
 - **멀티 팩터 인증**
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled.png)
+![Untitled](/assets/aws/AWS_1.png)
 
 - **S3-SUPPORT - S3 READ ONLY 계정 (user-1)**
 - **EC2-SUPPORT - EC2 READ ONLY 계정 (user-2)**
@@ -112,11 +107,11 @@ ex) **t2.micro**
 - 가속화 컴퓨팅 : 머신러닝에 최적화된 서버를 지원.
 - 스토리지최적화 : 높은 디스크 처리량
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%201.png)
+![Untitled](/assets/aws/AWS_2.png)
 
 ### Container
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%202.png)
+![Untitled](/assets/aws/AWS_3.png)
 
 가상머신은 가상화플랫폼이라는것이 존재한다. 컨테이너는 가상화플랫폼이 존재하지 않는다.
 
@@ -139,7 +134,7 @@ ex) **t2.micro**
 
 ex) 주말 트래픽이 갑자기 증가한다. → capacity확보가 필요함. → 서버리스는 알아서 해준다.(접근불가다.)
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%203.png)
+![Untitled](/assets/aws/AWS_4.png)
 
 ex) User Managment System → Trigger 환경이 필요할때 사용한다.
 
@@ -149,7 +144,7 @@ Lambda는 자동화되어 있어서 알아서 꺼진다.
 
 : AWS에서 Private하게 사용할 수 있는 네트워크
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%204.png)
+![Untitled](/assets/aws/AWS_5.png)
 
 Subnet : 리소스를 효율적으로 관리하기 위함. 
 
@@ -181,7 +176,7 @@ Subnet : 리소스를 효율적으로 관리하기 위함.
 - 블랙리스트 작성.
 - Public Subnet에만 해당함. ( 네트워크ACL → 인터넷게이트웨이 → 인터넷)
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%205.png)
+![Untitled](/assets/aws/AWS_6.png)
 
 - INBOUND
     
@@ -215,7 +210,7 @@ Subnet : 리소스를 효율적으로 관리하기 위함.
     +ebs는 최대 16개까지 동시접근 가능하다.
     
 
-![Untitled](AWS%20TECHNICAL%20ESSENTIALS%2022801d37e3ed4aa98e6fea5b2ed081a0/Untitled%206.png)
+![Untitled](/assets/aws/AWS_7.png)
 
 - 객체 스토리지(ex : S3)
     
