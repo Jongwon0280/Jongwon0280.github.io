@@ -1,19 +1,5 @@
 # AWS TECHNICAL ESSENTIALS
----
-title:  "AWS TECHNICAL ESSENTIALS"
-excerpt: "AWS 기초내용 정리입니다. "
 
-categories:
-  - Cloud
-tags:
-  - [Blog, AWS, Cloud]
-
-toc: true
-toc_sticky: true
- 
-date: 2023-01-20
-last_modified_at: 2023-01-20
----
 
 
 
