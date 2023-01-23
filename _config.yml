@@ -269,8 +269,8 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar: true
       sidebar:                  # 추가한 부분
         nav: "sidebar-category" # 추가한 부분
       
       
-future : true

@@ -32,20 +32,7 @@ sidebar-category:
   - title: "Cloud"
     children:
       - title: "AWS"
-        url: "/aws"
+        url: "/categories/#aws"
       - title: "ELK"
-        url: "/elk"
-  - title: "ML"
-    children:
-      - title: "지도학습"
-        url: "/supervised"
-      - title: "비지도학습"
-        url: "/unsupervised"
-      - title: "알고리즘체인/파이프라인"
-        url: "/pipeline"
-      - title: "데이터표현 및 특성"
-        url: "/datarepresent"
-      - title: "모델평가 및 향상"
-        url: "/estimation"
-      - title: "텍스트데이터처리"
-        url: "/textdata"
+        url: "/categories/#Elastic"
+  
