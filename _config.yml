@@ -259,6 +259,7 @@ compress_html:
 # Defaults
 defaults:
   # _posts
+  
   - scope:
       path: ""
       type: posts
@@ -275,4 +276,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: docs
+    
+      
+      
 future : true
