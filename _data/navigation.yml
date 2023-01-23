@@ -2,8 +2,11 @@
 main:
   - title: "Home"
     url: https://Jongwon0280.gihub.io
+  - title: "Categories"
+    url: /categories/
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
+ 
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -16,32 +19,33 @@ main:
     url: "/"
   - title: "Introduce"
     url: /about/
-  - title: "Category"
-    url: "/home/"
+  
+  - title: "Categories"
+    url: /categories/
+
   - title: "Tags"
     url: /tags/
-docs:
-  - title: Database
+  - title: "About"
+    url: /about/
+
+sidebar-category:
+  - title: "Cloud"
     children:
-      - title: "Oracle"
-        url: oracle/
-        category: "oracle"
-      - title: "MS-SQL"
-        url: mssql/
-        category: "mssql"
-      - title: "MariaDB"
-        url: mariadb/
-        category: "mariadb"
-  - title: Server
+      - title: "AWS"
+        url: "/aws"
+      - title: "ELK"
+        url: "/elk"
+  - title: "ML"
     children:
-      - title: "Ubuntu"
-        url: ubuntu/
-        category: "ubuntu"
-      - title: "Windows Server"
-        url: windows-server/
-        category: "windows-server"
-  - title: Etc
-    children:
-      - title: "Jekyll"
-        url: jekyll/
-        category: "jekyll"
+      - title: "지도학습"
+        url: "/supervised"
+      - title: "비지도학습"
+        url: "/unsupervised"
+      - title: "알고리즘체인/파이프라인"
+        url: "/pipeline"
+      - title: "데이터표현 및 특성"
+        url: "/datarepresent"
+      - title: "모델평가 및 향상"
+        url: "/estimation"
+      - title: "텍스트데이터처리"
+        url: "/textdata"

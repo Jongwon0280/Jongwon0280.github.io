@@ -1,14 +1,11 @@
 ---
 layout: single
 title:  "AWS TECHNICAL ESSENTIALS 교육"
-folder: "aws"
 categories:
   - aws
 tags: [aws, cloud]
 
 author_profile: true
-sidebar:
-  nav: "docs"
 
 toc: true
 toc_label: "목록"
