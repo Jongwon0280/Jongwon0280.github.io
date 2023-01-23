@@ -35,4 +35,8 @@ sidebar-category:
         url: "/categories/#aws"
       - title: "ELK"
         url: "/categories/#Elastic"
+  - title: "PS"
+    children:
+      - title: "BOJ"
+        url: "/categories/#PS"
   
