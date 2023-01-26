@@ -1,0 +1,115 @@
+---
+layout: single
+title: 백준(11003,17298)
+
+categories: 
+	- PS
+
+tags: Algorithm
+author_profile: true
+
+toc: true
+toc_label: "목록"
+toc_icon: "bars"
+toc_sticky: true
+
+date: 2023-01-25
+---
+
+### 최소값 찾기(11003)
+
+N개의 수 A1, A2, ..., AN과 L이 주어진다.
+
+Di = Ai-L+1 ~ Ai 중의 최솟값이라고 할 때, D에 저장된 수를 출력하는 프로그램을 작성하시오. 이때, i ≤ 0 인 Ai는 무시하고 D를 구해야 한다.
+
+- **입력**
+
+첫째 줄에 N과 L이 주어진다. (1 ≤ L ≤ N ≤ 5,000,000)
+
+둘째 줄에는 N개의 수 Ai가 주어진다. (-109 ≤ Ai ≤ 109)
+
+ 
+
+- **입출력 예시**
+
+```python
+12 3
+1 5 2 3 6 2 3 7 3 5 2 6
+
+-------------------------------------
+
+1 1 1 2 2 2 2 2 3 3 2 2
+```
+
+- **해결책**
+1. 수열 내에서 L이라는 길이 안에서의 최소값을 기록해야하므로, 최소값을 얻기위해 deque이라는 자료구조를 사용 
+2. 범위가 이동 될때 deque의 가장 오래된 값을 popleft해주어야하기때문에 인덱스 또한 deque에 기록하도록 해야함.
+
+### 코드
+
+```python
+from collections import deque # 덱 선언
+
+mydeq = deque()
+result=[]
+n,l = map(int,input().split())
+an = list(map(int,input().split()))
+
+for i in range(n): # 수열 순회
+    while mydeq and mydeq[-1][1]>an[i]: #새로들어온 값보다 크면 pop
+        mydeq.pop() #stack처럼 삭제
+    mydeq.append((i,an[i])) # 새로운 수 삽입
+    if mydeq[0][0]<=i-l: # i-L은 범위를 벗어난 값이기때문에 pop해준다. 
+        mydeq.popleft() # Queue처럼 삭제
+   
+    result.append(mydeq[0][1]) # 문제형식대로 값을 이어붙인다.
+
+for i in result:
+    print(i,end=' ') 
+```
+
+### 오큰수(17298)
+
+크기가 N인 수열 A = A1, A2, ..., AN이 있다. 수열의 각 원소 Ai에 대해서 오큰수 NGE(i)를 구하려고 한다. Ai의 오큰수는 오른쪽에 있으면서 Ai보다 큰 수 중에서 가장 왼쪽에 있는 수를 의미한다. 그러한 수가 없는 경우에 오큰수는 -1이다.
+
+예를 들어, A = [3, 5, 2, 7]인 경우 NGE(1) = 5, NGE(2) = 7, NGE(3) = 7, NGE(4) = -1이다. A = [9, 5, 4, 8]인 경우에는 NGE(1) = -1, NGE(2) = 8, NGE(3) = 8, NGE(4) = -1이다.
+
+- **입력**
+
+첫째 줄에 수열 A의 크기 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에 수열 A의 원소 A1, A2, ..., AN (1 ≤ Ai ≤ 1,000,000)이 주어진다.
+
+- **입출력 예시**
+
+```python
+4
+3 5 2 7
+
+----------------------
+
+5 7 7 -1
+```
+
+- **해결책**
+
+1. **오큰수** : 자신보다 크고 가장 왼쪽에 있어야한다. → 순서가 중요하므로, **정렬을 하지 않는다.**
+
+1. 가장 마지막에 존재하는 수는 -1일 수밖에 없다. → **처음 정답 리스트 생성시 초기화 값을 -1로**
+2. 인덱스값을 스택에 넣어준다. → answer에 들어가는 값은 루프를 순회하는 값이고, answer의 어떤 인덱스에 그 값을 넣어주는지가 중요하기 때문에 값을 넣어서 인덱스를 또 찾아주는 것을 효율적이지 않다.
+
+1. 스택에 삽입하는 값은 아래 Push했던 값들의 오큰수일수 있기때문에 while문을 순회하며 stack이 empty하지 않고, 삽입값보다 작은 값들을 pop하여 answer행렬에 삽입값을 넣어준다. 
+
+### 코드
+
+```python
+n = int(input())
+stk = []
+ans=[-1]*n
+num = list(map(int,input().split()))
+for i in range(n):
+    while stk and num[stk[-1]]<num[i]:
+        ans[stk.pop()]=num[i]
+    
+    stk.append(i)
+
+print(*ans)
+```
