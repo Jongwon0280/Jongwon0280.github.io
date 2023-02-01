@@ -704,6 +704,7 @@ traffic_data = data[(data['EVT_CL_CD']>=401)&(data['EVT_CL_CD']<=406 ) ]
 
 
 
+
 > 401~406으로 조건기반 필터링을 진행.
 
 
