@@ -1,11 +1,10 @@
 ---
 layout: archive
-permalink: categories/elk
-title: "ELK"
-
+permalink: categories/da
+title: "DA"
 author_profile: true
-
+sidebar_main: true
 ---
 
-{% assign posts = site.categories.elk %}
+{% assign posts = site.categories.da %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

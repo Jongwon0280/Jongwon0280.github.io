@@ -1,12 +1,14 @@
 ---
 layout: single
 title:  "지역치안안전데이터 전처리"
-categories: DA
+categories:
+  - da
+  
 toc: true
 toc_label: "목록"
 toc_icon: "bars"
 toc_sticky: true
-author_profile: false
+author_profile: true
 ---
 
 # 지역치안안전데이터분석경연대회

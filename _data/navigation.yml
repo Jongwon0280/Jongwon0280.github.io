@@ -28,15 +28,5 @@ main:
   - title: "About"
     url: /about/
 
-sidebar-category:
-  - title: "Cloud"
-    children:
-      - title: "AWS"
-        url: "/categories/#aws"
-      - title: "ELK"
-        url: "/categories/#Elastic"
-  - title: "PS"
-    children:
-      - title: "BOJ"
-        url: "/categories/#PS"
+
   
