@@ -13,7 +13,7 @@ date: 2023-02-10
 
 ### 1. 아키텍처 구성
 
-![Untitled](/assets/EFK/EFKStack.png)
+![EFKStack](https://user-images.githubusercontent.com/56438131/218015170-1f3420c2-5901-4ee5-aefd-9bde34b29c61.PNG)
 
 - LogGenerator로 로그를 생성하여, FluentD로 수집하고 Opensearch로 전송 및 OpenDashboard와 연동하여 시각화할 수 있게 구성한다.
 - 서버는 EC2 환경에서 진행한다.
@@ -23,21 +23,23 @@ date: 2023-02-10
 
 2.1 EC2 인스턴스 생성 및 Putty를 통한 접속
 
-![Untitled](/assets/EFK/EC2runningstate.png)
+
+![EC2runningstate](https://user-images.githubusercontent.com/56438131/218015280-683cbfe6-35a3-4731-bf17-a253c5f7741f.PNG)
+
 
 EC2 프리티어를 지원하는 t2.micro로 인스턴스타입을 생성하고 Running한다.
 
-![Untitled](/assets/EFK/tcp5601open.png)
+![tcp5601open](https://user-images.githubusercontent.com/56438131/218015378-9a29155f-19a7-4265-883b-4c8a654c0075.PNG)
 
-![Untitled](/assets/EFK/http80open.png)
+![http80open](https://user-images.githubusercontent.com/56438131/218015433-ef7bcfb9-9efc-48d9-85b0-2f1d6b970009.PNG)
 
 Security Groups설정에서 Inbound Rules를 편집하여 5601(Opensearch에서 DashBoard와 통신)포트와 HTTP의 80번포트, HTTPS의 443포트에 대해서 Anywhere로 지정해준다.
 
-![Untitled](/assets/EFK/puttyset1.png)
+![puttyset1](https://user-images.githubusercontent.com/56438131/218015485-a33ce849-e943-4cfb-8b37-64c66755c5aa.PNG)
 
 putty의 hostname에서 자신이 설치한 서버환경(os)를 써주고 ‘@’ 뒤에는 EC2인스턴스의 고유한 퍼블릭 dns server 주소를 적어준다.
 
-![Untitled](/assets/EFK/puttyset2.png)
+![puttyset2](https://user-images.githubusercontent.com/56438131/218015540-cf98babf-49b0-4efd-a37a-98ce72020758.PNG)
 
 좌측의 SSH→Auth탭으로 들어가 ‘Private key file for authentication’의 EC2에서 발급받은 PPK키를 입력해준다. (Pem키일경우 Putty Gen을 이용하여 PPK키로 변경해서 넣어준다.)
 
