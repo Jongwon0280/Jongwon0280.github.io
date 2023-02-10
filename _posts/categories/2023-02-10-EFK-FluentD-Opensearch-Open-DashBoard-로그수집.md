@@ -1,15 +1,19 @@
-# EFK(FluentD, Opensearch, Open-DashBoard) 로그수집
+
 title: EFK(FluentD, Opensearch, Open-DashBoard) 로그수집
-subtitle: 
+layout: single
 categories: 
-tags: 
-date: 2023-02-10 14:38:18 +0000
-last_modified_at: 2023-02-10 14:38:19 +0000
+   - Elastic
+author_profile: true
+toc: true
+toc_label: "목록"
+toc_icon: "bars"
+toc_sticky: true
+date: 2023-02-10
 ---
 
 ### 1. 아키텍처 구성
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled.png)
+![Untitled](/assets/EFK/EFK_Stack.png)
 
 - LogGenerator로 로그를 생성하여, FluentD로 수집하고 Opensearch로 전송 및 OpenDashboard와 연동하여 시각화할 수 있게 구성한다.
 - 서버는 EC2 환경에서 진행한다.
@@ -19,21 +23,21 @@ last_modified_at: 2023-02-10 14:38:19 +0000
 
 2.1 EC2 인스턴스 생성 및 Putty를 통한 접속
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%201.png)
+![Untitled](/assets/EFK/EC2_runningstate.png)
 
 EC2 프리티어를 지원하는 t2.micro로 인스턴스타입을 생성하고 Running한다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%202.png)
+![Untitled](/assets/EFK/tcp_5601_open.png)
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%203.png)
+![Untitled](/assets/EFK/http_80_open.png)
 
 Security Groups설정에서 Inbound Rules를 편집하여 5601(Opensearch에서 DashBoard와 통신)포트와 HTTP의 80번포트, HTTPS의 443포트에 대해서 Anywhere로 지정해준다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%204.png)
+![Untitled](/assets/EFK/putty_set1.png)
 
 putty의 hostname에서 자신이 설치한 서버환경(os)를 써주고 ‘@’ 뒤에는 EC2인스턴스의 고유한 퍼블릭 dns server 주소를 적어준다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%205.png)
+![Untitled](/assets/EFK/putty_set2.png)
 
 좌측의 SSH→Auth탭으로 들어가 ‘Private key file for authentication’의 EC2에서 발급받은 PPK키를 입력해준다. (Pem키일경우 Putty Gen을 이용하여 PPK키로 변경해서 넣어준다.)
 
@@ -128,7 +132,7 @@ export OPENSEARCH_HOME=$(pwd)
 
 - OpenSearch의 포트사용처
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%206.png)
+![Untitled](/assets/EFK/portnumber.png)
 
 ```powershell
 cd ./opensearch/opensearch-1.4.0/config/opensearch.yml
@@ -321,14 +325,14 @@ opensearch.password: kibanaserver
 
 opensearch-dashboards를 실행한다. opensearch가 구동되는 환경에서 실행해야한다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%207.png)
+![Untitled](/assets/EFK/opendash.png)
 
 다음과 같은 화면이 뜬다면, opensearch와 opendashboard가 성공적으로 연동된것이다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%208.png)
+![Untitled](/assets/EFK/opendash1.png)
 
 stack Management로 접속하여, index Patterns로 접속한뒤 우리가 설정한 인덱스 네임을 조회하면 생성한 index가 조회될 것 이다.
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%209.png)
+![Untitled](/assets/EFK/opendash2.png)
 
-![Untitled](EFK(FluentD,%20Opensearch,%20Open-DashBoard)%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8%208b03d058a17948b291f0e8ea5826bff9/Untitled%2010.png)
+![Untitled](/assets/EFK/opendash3.png)
