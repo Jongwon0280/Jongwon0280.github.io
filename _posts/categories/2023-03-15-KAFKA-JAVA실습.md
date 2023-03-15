@@ -1,10 +1,14 @@
-# KAFKA JAVA실습
+---
 title: KAFKA JAVA실습
-subtitle: 
-categories: DataEngineering
-tags: 
-date: 2023-03-15 20:24:01 +0000
-last_modified_at: 2023-03-15 20:24:02 +0000
+layout: single
+categories: 
+   - DataEngineering
+author_profile: true
+toc: true
+toc_label: "목록"
+toc_icon: "bars"
+toc_sticky: true
+date: 2023-03-15
 ---
 
 ### Producer
@@ -172,7 +176,7 @@ public class Main {
 
 ### 2. 설정
 
-[**group.id**](http://group.id/) : consumer는 같은 group id 단위로 offset 관리를 한다. consumer 가 종료되더라도 group id 를 기준으로 commit 된 offset 정보는 kafka 에 유지되고, 이에 따라 같은 group id를 가진 consumer가 다음 consume 시 받아오는 데이터는 그 commit된 offset 이후부터 가져온다.
+**group.id** : consumer는 같은 group id 단위로 offset 관리를 한다. consumer 가 종료되더라도 group id 를 기준으로 commit 된 offset 정보는 kafka 에 유지되고, 이에 따라 같은 group id를 가진 consumer가 다음 consume 시 받아오는 데이터는 그 commit된 offset 이후부터 가져온다.
 
 **auto.offset.reset** : 해당 consumer group id 에 대한 offset 정보가 없을 때, 현재kafka의 토픽에 존재하는 데이터중에 어디부터 가져올지.
 
