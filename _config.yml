@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 
@@ -107,7 +107,7 @@ analytics:
 
 author:
   name             : "Choi Jongwon"                  # 이름 영역입니다.
-  avatar           : "/assets/info1.jpg"     # 프로필 사진 경로입니다.
+  avatar           : "/assets/info3.jpg"     # 프로필 사진 경로입니다.
   bio              : "**상명대학교 휴먼지능정보공학과 재학중**<br><br>관심분야 : 데이터분석 , 데이터엔지니어링<br>"
                      # biography의 약칭으로, 자기소개를 적으시면 됩니다.
                      # 줄바꿈은 <br>로 굵은 글씨는 **글씨** 로 표기해주세요. 
