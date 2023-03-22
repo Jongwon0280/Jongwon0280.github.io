@@ -197,7 +197,92 @@ public class Main {
 
 만일 동일 Topic에 대해서 가지는 파티션중에서 0번 파티션을 커밋을 하지말고, 계속 유지를 해야한다는 가정을 두고 Consumer코드를 작성해보자
 
-[https://gist.github.com/Jongwon0280/32311e3265778172198b8ff09ea5b984](https://gist.github.com/Jongwon0280/32311e3265778172198b8ff09ea5b984)
+```java
+package de.kafka.basic.consumer;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Properties;
+import java.util.Scanner;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import org.apache.kafka.common.TopicPartition;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Properties props = new Properties();
+// NODE1, NODE2, NODE3을 브로커 서버 IP로 변경
+        String BOOTSTRAP_SERVERS ="ec2-43-201-104-214.ap-northeast-2.compute.amazonaws.com:9092,ec2-3-36 -49-89.ap-northeast-2.compute.amazonaws.com:9092,ec2-3-38-153-68.ap-northeast-2.comput e.amazonaws.com:9092";
+        String TOPIC_NAME = "quickstart-events";
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "test3");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
+        Consumer<String, String> consumer = new KafkaConsumer<>(props);
+        consumer.subscribe(Collections.singletonList(TOPIC_NAME));
+        try {
+            while (true) {
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+
+                Map<TopicPartition, List<Long>> processedTopicPartitionOffsets = new HashMap<>();
+
+                for (ConsumerRecord<String, String> record : records) {
+                    System.out.println(
+                            "Received message: (" + record.key() + ", " + record.value() + ") at "
+                                    + "topic "+ record.topic() + " partition " + record.partition() + "offset "
+                                    + record.offset());
+                    if (record.partition() != 0) {
+                        TopicPartition topicPartition = new TopicPartition(record.topic(), record.partition());
+
+                        if (processedTopicPartitionOffsets.containsKey(topicPartition)) {
+
+                            List<Long> offsets = processedTopicPartitionOffsets.get(topicPartition);
+
+                            offsets.add(record.offset());
+                        }else {
+                            List<Long> offsets = new ArrayList<>();
+                            offsets.add(record.offset());
+                            processedTopicPartitionOffsets.put(topicPartition, offsets);
+
+                        }
+                    }
+                }
+                Map<TopicPartition, OffsetAndMetadata> commitOffset = new HashMap();
+
+                for (Entry<TopicPartition, List<Long>> entry : processedTopicPartition
+
+                Offsets.entrySet()) {
+
+                    List<Long> offsets = entry.getValue();
+                    offsets.sort(Comparator.comparingLong(Long::longValue).reversed());
+
+                    Long latestProcessedOffset = offsets.get(0);
+                    System.out.println("latest processed offset of topic partition - "+ entry.getKey()
+                            + ": " + latestProcessedOffset);
+                    commitOffset.put(entry.getKey(), new OffsetAndMetadata(latestProcessedOffset + 1));
+                }
+                consumer.commitSync(commitOffset);
+            }
+        } finally {
+            consumer.close();
+        }
+    }
+}
+
+```
 
 ```java
 # 코드 중 핵심적인 부분
