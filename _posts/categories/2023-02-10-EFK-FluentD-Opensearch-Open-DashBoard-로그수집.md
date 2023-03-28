@@ -2,7 +2,7 @@
 title: EFK(FluentD, Opensearch, Open-DashBoard) 로그수집
 layout: single
 categories: 
-   - DataEnginnering
+   - DataEngineering
 author_profile: true
 toc: true
 toc_label: "목록"
