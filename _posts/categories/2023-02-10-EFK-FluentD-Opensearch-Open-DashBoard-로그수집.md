@@ -2,7 +2,7 @@
 title: EFK(FluentD, Opensearch, Open-DashBoard) 로그수집
 layout: single
 categories: 
-   - Elastic
+   - DataEnginnering
 author_profile: true
 toc: true
 toc_label: "목록"
@@ -10,6 +10,8 @@ toc_icon: "bars"
 toc_sticky: true
 date: 2023-02-10
 ---
+
+
 
 ### 1. 아키텍처 구성
 
