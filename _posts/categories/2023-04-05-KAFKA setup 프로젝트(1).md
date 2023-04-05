@@ -3,7 +3,7 @@
 layout: single
 title: KAFKA setup 프로젝트(1)
 categories:
-  - DataEngineering
+  - Project
 author_profile: true
 toc: true
 toc_label: "목록"
