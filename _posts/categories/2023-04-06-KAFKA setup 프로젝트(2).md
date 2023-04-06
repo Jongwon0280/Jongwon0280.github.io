@@ -156,6 +156,23 @@ public class ImpClickGeneratorApp {
 (1)에서 정의한 요구사항에 따르면, impressionEvent가 들어온후 특정 기간동안 impressionId를 유지하고 그 기간안에 다시 들어온 impId는 무시한다는 가정과 Click도 마찬가지로, 특정기간동안 중복해서 들어온 ImpId는 무시해야한다는 가정이 있으므로, 이것을 해결해야한다.
 
 이를 위해 사용하는 것은 Cache를 사용할 것이다. 그중에서도 CaffeineCacheManager를 이용하여 캐시를 구현하였다.
+### build.gradle
+```java
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    implementation(project(":protocol"))
+    implementation 'com.github.ben-manes.caffeine:caffeine:2.9.3'
+
+}
+
+application {
+    mainClassName 'de.kafka.ad.generator.ImpClickJoinApp'
+}
+```
 
 ### 2.1 Caches
 
