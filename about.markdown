@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-안녕하세요.
+## 구현중이에요..
+
+[블로그로 돌아가기] (https://Jongwon0280.github.io)
