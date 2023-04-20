@@ -1,7 +1,6 @@
 ---
-
 layout: single
-title: 캐글데이터분석 : Mushroom
+title: 캐글데이터분석(Mushroom Edible)
 categories:
   - da
 author_profile: true
@@ -9,7 +8,7 @@ toc: true
 toc_label: "목록"
 toc_icon: "bars"
 toc_sticky: true
-date: 2023-04-19
+date: 2023-04-20
 ---
 
 ## Mushroom Edible Classification
