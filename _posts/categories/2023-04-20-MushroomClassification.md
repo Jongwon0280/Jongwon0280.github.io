@@ -9,9 +9,13 @@ toc: true
 toc_label: "목록"
 toc_icon: "bars"
 toc_sticky: true
-date: 2023-04-06
+date: 2023-04-20
 ---
+
 ## Mushroom Edible Classification
+
+
+
 
 # Description
 
