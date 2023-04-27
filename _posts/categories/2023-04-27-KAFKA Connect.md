@@ -36,7 +36,7 @@ Distributed 모드는 Kafka Connect에 대한 확장성을 제공한다. Distrib
 
 Task는 Converter를 사용하여 데이터 타입을 바이트에서 Connect 내부 데이터 타입 또는 그 반대로 변환한다. 다음 그림은 JDBC Source Connecter를 사용하여 데이터베이스에서 read하고, Kafka에 write하고, HDFS Sink Connector를 사용하여 HDFS에 write할 때 Converter가 사용되는 방법을 보여준다.
 
-![출처: [https://docs.confluent.io/platform/current/connect/concepts.html#converters](https://docs.confluent.io/platform/current/connect/concepts.html#converters)](KAFKA%20Connect%20f4bf8d730baf470c8716f21ce1b42aa9/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/56438131/234896345-2e240339-7c4d-4031-b3ce-c007f64f3da7.png)
 
 출처: [https://docs.confluent.io/platform/current/connect/concepts.html#converters](https://docs.confluent.io/platform/current/connect/concepts.html#converters)
 
@@ -44,11 +44,11 @@ Converter가 데이터 타입을 변환하는 도구라면, Transformer는 데�
 
 ## 3. Kafka JDBC Connector
 
-![출처: [https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/](https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/)](KAFKA%20Connect%20f4bf8d730baf470c8716f21ce1b42aa9/Untitled%201.png)
+![Untitled 2](https://user-images.githubusercontent.com/56438131/234896494-919e6b92-fce7-463a-8346-6ff1b9ae8eee.png)
 
 출처: [https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/](https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/)
 
-![출처: [https://www.confluent.io/blog/simplest-useful-kafka-connect-data-pipeline-world-thereabouts-part-1/](https://www.confluent.io/blog/simplest-useful-kafka-connect-data-pipeline-world-thereabouts-part-1/)](KAFKA%20Connect%20f4bf8d730baf470c8716f21ce1b42aa9/Untitled%202.png)
+![Untitled 1](https://user-images.githubusercontent.com/56438131/234896630-bb287c32-7783-4c8d-9ed8-be645beeea51.png)
 
 출처: [https://www.confluent.io/blog/simplest-useful-kafka-connect-data-pipeline-world-thereabouts-part-1/](https://www.confluent.io/blog/simplest-useful-kafka-connect-data-pipeline-world-thereabouts-part-1/)
 
