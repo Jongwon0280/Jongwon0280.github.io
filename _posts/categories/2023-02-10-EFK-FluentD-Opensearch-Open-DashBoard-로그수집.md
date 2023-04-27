@@ -11,7 +11,7 @@ toc_sticky: true
 date: 2023-02-10
 ---
 
-
+##EFK(FluentD, Opensearch, Open-DashBoard) 로그수집
 
 ### 1. 아키텍처 구성
 

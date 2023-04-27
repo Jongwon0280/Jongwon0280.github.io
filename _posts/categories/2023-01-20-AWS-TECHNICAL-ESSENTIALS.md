@@ -16,7 +16,7 @@ date: 2022-01-20
 ---
 
 
-
+##AWS TECHNICAL ESSENTIALS 과정 정리
 
 
 
