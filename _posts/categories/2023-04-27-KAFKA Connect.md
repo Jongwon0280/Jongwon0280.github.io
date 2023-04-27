@@ -193,7 +193,9 @@ mysql> select * from test;
 
 ### 4.2 Broker 및 JDBC Connector 설정
 
-각 브로커는 전에 포스팅하였던 브로커3대로 동일하기에 참고하면 된다. (링크)
+각 브로커는 전에 포스팅하였던 브로커3대로 동일하기에 참고하면 된다. 
+
+> [KAFKA 설치 및 실행 ](https://jongwon0280.github.io/dataengineering/KAFKA-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89/)
 
 ### 4.2.1 Kafka JDBC Connector 설치
 
