@@ -1,9 +1,17 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: single
+title:  "포트폴리오"
+
+author_profile: true
+
+toc: true
+toc_label: "목록"
+toc_icon: "bars"
+toc_sticky: true
+
+date: 2023-05-05
 ---
 
-## 구현중이에요..
+### 안녕하세요.
 
-[블로그로 돌아가기] (https://Jongwon0280.github.io)
+## 데이터분석가
