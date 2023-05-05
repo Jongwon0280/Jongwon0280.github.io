@@ -17,8 +17,8 @@ main:
 main:
   - title: "Home"
     url: "/"
-  - title: "Introduce"
-    url: /about/
+#  - title: "Introduce"
+#   url: /about/
   
   - title: "Categories"
     url: /categories/
