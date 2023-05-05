@@ -23,9 +23,7 @@ main:
   - title: "Categories"
     url: /categories/
 
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
+  - title: "포트폴리오"
     url: /about/
 
 
