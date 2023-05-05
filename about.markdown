@@ -26,6 +26,7 @@ date: 2023-05-05
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction](https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction)
       
 <br>
+
     - **건설기계오일 이상탐지 모델(주관 : 데이콘, 주최 : 현대제뉴인, AWS)**
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/OilAnomalyDetection](https://github.com/Jongwon0280/DataContest/tree/master/OilAnomalyDetection)
         
@@ -34,6 +35,7 @@ date: 2023-05-05
         - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/Autism_Screening.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/Autism_Screening.ipynb)
     
 <br>
+
     - **고객데이터를 활용한 여행상품 신청 예측 모델(주관 : 데이콘)**
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction](https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction)
 
@@ -48,10 +50,9 @@ date: 2023-05-05
         
         [이상 URL탐지웹구현(1. 아키텍처 및 데이터 소스)](https://jongwon0280.github.io/project/ELK-MalURL/)
         
-<br>    
+
     - **KAFKA를 활용한 앱 광고 유저데이터 생성 및 추출**
         - Github-URL :
-        
         [https://github.com/Jongwon0280/KAFKA-Study-and-Project](https://github.com/Jongwon0280/KAFKA-Study-and-Project)
         
         - 블로그 URL : [https://jongwon0280.github.io/project/KAFKA-setup-프로젝트(1)/](https://jongwon0280.github.io/project/KAFKA-setup-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(1)/)
