@@ -18,10 +18,10 @@ date: 2023-05-05
 
 ### 프로젝트
 <br>
-- **데이터분석**
+- **데이터분석 및 모델링**
     
     
-    - **제주도 교통량 예측 회귀 모형 ( 주관 : 데이콘 ,주최 : 제주도 테크노파크)**
+    - **제주도 교통량 예측 회귀	 모형 ( 주관 : 데이콘 ,주최 : 제주도 테크노파크)**
 
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction](https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction)
       
@@ -41,9 +41,31 @@ date: 2023-05-05
 
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction](https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction)
 
+
+   - **폐 XRAY이미지를 통한 폐렴여부 예측**
+
+        - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/Chest_Pneumonia.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/Chest_Pneumonia.ipynb)
+
+
+   - **피부암 영상을 통한 피부암 다중분류모델**
+
+        - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/SkinCancerClassification.ipynb)
+
+   - **유방암 영상을 통한 병변 마스킹생성**
+
+        - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb]https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/SkinCancerClassification.ipynb)
+
+
+
 <br>
 <br>
 - **데이터 수집 및 추출**
+
+    - **그림체별 웹툰추천 웹 및 커뮤니티**
+        - Github-URL :
+        [https://github.com/Jongwon0280/Recommendation-Webtoon-Web](https://github.com/Jongwon0280/Recommendation-Webtoon-Web)
+        
+   
     
     
     - **ELK를 활용한 이상URL탐지모델**
@@ -73,10 +95,11 @@ date: 2023-05-05
 
 
 <br>
-- **데이터 핸들링 및 분석**
+- **데이터 전처리, 모델링**
     - GitHub-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab)
     
-    데이터 전처리 능력과 시각화를 능숙하게 하기위해 판다스 라이브러리를 통한 데이터 전처리 및 시각화를 공부하였습니다. 또한 탐색적 데이터분석능력을 증진시키기 위해 캐글이나 데이콘의 데이터셋을 전처리하고 분석하고있습니다.
+    데이터 전처리 능력과 시각화를 능숙하게 하기위해 파이썬을 활용한 데이터 전처리 및 시각화 역량을 강화하기 위해 노력하였습니다. 
+    또한 탐색적 데이터분석능력을 증진시키기 위해 캐글이나 데이콘의 데이터셋을 전처리하고 분석하고있고, 모델링(기계학습, 딥러닝)을 통해 모델의 성능개선을 공부하였습니다.
     
 
 <br>
