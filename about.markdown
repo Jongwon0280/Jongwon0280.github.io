@@ -25,36 +25,49 @@ date: 2023-05-05
 
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction](https://github.com/Jongwon0280/DataContest/tree/master/JejuPrediction)
       
+<br>
 
     - **건설기계오일 이상탐지 모델(주관 : 데이콘, 주최 : 현대제뉴인, AWS)**
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/OilAnomalyDetection](https://github.com/Jongwon0280/DataContest/tree/master/OilAnomalyDetection)
         
+      
+<br>
 
 
     - **AQ지수를 활용한 자폐증 예측 모델**
 
         - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/Autism_Screening.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/Autism_Screening.ipynb)
     
+      
+<br>
 
 
     - **고객데이터를 활용한 여행상품 신청 예측 모델(주관 : 데이콘)**
 
         - Github-URL : [https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction](https://github.com/Jongwon0280/DataContest/tree/master/TravelPrediction)
 
+      
+<br>
 
    - **폐 XRAY이미지를 통한 폐렴여부 예측**
 
         - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/Chest_Pneumonia.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/Chest_Pneumonia.ipynb)
 
+      
+<br>
 
    - **피부암 영상을 통한 피부암 다중분류모델**
 
         - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/SkinCancerClassification.ipynb)
+      
+<br>
 
    - **유방암 영상을 통한 병변 마스킹생성**
 
-        - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb]https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/SkinCancerClassification.ipynb)
+        - Github-URL : [https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/%EC%BA%90%EA%B8%80%EB%8D%B0%EC%9D%B4%ED%84%B0EDA/SkinCancerClassification.ipynb)
 
+      
+<br>
 
 
 <br>
