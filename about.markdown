@@ -60,21 +60,27 @@ date: 2023-05-05
 - **Algorithm Study**
   - [GitHub-URL](https://github.com/Jongwon0280/AlgorithmStudy)
   - [블로그 URL](https://jongwon0280.github.io/categories/PS)
+	<br>
 	자료구조 및 알고리즘을 활용하여 다양한 문제해결 플랫폼의 문제들을 해결하면서 문제해결력을 기르고 있습니다 🙂 
 	문제는 풀고 만족하는 것이 아닌 github와 제가 운영중인 블로그에 정리하고 있습니다.
     
 
 - **데이터 전처리, 모델링**
   - [GitHub-URL](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab)
-	 데이터 전처리 능력과 시각화를 능숙하게 하기위해 파이썬을 활용한 데이터 전처리 및 시각화 역량을 강화하기 위해 노력하였습니다. 
+
+
+	 <br>
+	데이터 전처리 능력과 시각화를 능숙하게 하기위해 파이썬을 활용한 데이터 전처리 및 시각화 역량을 강화하기 위해 노력하였습니다. 
     	또한 탐색적 데이터분석능력을 증진시키기 위해 캐글이나 데이콘의 데이터셋을 전처리하고 분석하고있고, 모델링(기계학습, 딥러닝)을 통해 모델의 성능개선을 공부하였습니다.
 
 - **머신러닝 모델링**
   - [GitHub-URL](https://github.com/Jongwon0280/Machine-Learning-with-Python-Library)
+	<br>
 	데이터분석을 토대로 도출한 인사이트를 데이터셋에 적용하여 모델링까지 진행하는 능력을 갖추기 위해 파이썬 머신러닝 라이브러리들을 활용하는 방법에 대해서 학습하고 있습니다.
 
 - **데이터 수집 및 추출**
   - [블로그 URL](https://jongwon0280.github.io/categories/DataEngineering)
+	<br>
 	앱서버에서 데이터를 추출하고 분석할 수 있는 능력을 기르기위해 로그 분석 시각화 솔루션인 EFK, ELK스택을 학습하였으며, AWS EC2환경에서 SQL Server를 설치하고 데이터의 추가 및 변경사항을 추출하고 전송할 수 있는 KAFKA-Connect에 대해서 학습하고있습니다.
 
 ### 수상경력
