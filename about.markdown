@@ -32,7 +32,7 @@ date: 2023-05-05
     - [GitHub-URL](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb)
 
   - **유방암 영상을 통한 병변 마스킹 생성**
-    - [GitHub-URL](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb)
+    - [GitHub-URL](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/breast_cancer_UNET.ipynb)
 
 
 
