@@ -34,6 +34,12 @@ date: 2023-05-05
   - **유방암 영상을 통한 병변 마스킹 생성**
     - [GitHub-URL](https://github.com/Jongwon0280/EDA-Study-and-Kaggle-Lab/blob/main/캐글데이터EDA/SkinCancerClassification.ipynb)
 
+
+
+<br><br>
+
+
+
 - **데이터 수집 및 추출**
 
   - **그림체별 웹툰추천 웹 및 커뮤니티**
@@ -46,6 +52,8 @@ date: 2023-05-05
   - **KAFKA를 활용한 앱 광고 유저데이터 생성 및 추출**
     - [GitHub-URL](https://github.com/Jongwon0280/KAFKA-Study-and-Project)
     - [블로그 URL](https://jongwon0280.github.io/project/KAFKA-setup-프로젝트(1)/)
+
+<br><br>
 
 ### 학습
 
