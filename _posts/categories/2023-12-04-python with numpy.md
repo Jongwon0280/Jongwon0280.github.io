@@ -11,7 +11,7 @@ toc_sticky: true
 date: 2023-12-04
 ---
 
-# Basics - Python with Numpy
+
 
 > **목적**
 > 
