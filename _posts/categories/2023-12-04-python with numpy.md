@@ -194,7 +194,7 @@ print("softmax(x) = " + str(softmax(t_x)))
 
 - L1
     
-    ![Untitled](Basics%20-%20Python%20with%20Numpy%2098e6e4ebff7943d2b39ad0c7dc69aea4/Untitled%204.png)
+    ![Untitled 4](https://github.com/Jongwon0280/Jongwon0280.github.io/assets/56438131/92a596de-51ff-4c08-9ca5-6ecb8b9b0448)
     
     ```python
     def L1(yhat, y):
@@ -210,8 +210,9 @@ print("softmax(x) = " + str(softmax(t_x)))
 
 - L2
     
-    ![Untitled 4](https://github.com/Jongwon0280/Jongwon0280.github.io/assets/56438131/92a596de-51ff-4c08-9ca5-6ecb8b9b0448)
-    
+   
+    ![Untitled 5](https://github.com/Jongwon0280/Jongwon0280.github.io/assets/56438131/866b15f3-572d-4a04-b861-1ba4cdead298)
+
     np.dot을 통해 square를 구한다.
     
     ```python
